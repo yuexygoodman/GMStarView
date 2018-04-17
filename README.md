@@ -3,8 +3,7 @@
 可自定义前景图、背景图
 支持浮点型数据
 
-
-let starView=GMStarView()
+        let starView=GMStarView()
 
         //starView.count=6 默认是5
         
