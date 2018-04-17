@@ -2,8 +2,8 @@
 //  GMStarViewTests.swift
 //  GMStarViewTests
 //
-//  Created by 岳潇洋 on 2018/4/16.
-//  Copyright © 2018年 岳潇洋. All rights reserved.
+//  Created by Good Man on 2018/4/16.
+//  Copyright © 2018年 Good Man. All rights reserved.
 //
 
 import XCTest
