@@ -12,14 +12,14 @@ let ST_GMStarBundle:Bundle?={
     let path=Bundle(for: GMStarView.self).path(forResource: "GMStarBundle", ofType: "bundle")
     if let path=path {
         let bundle=Bundle(path: path)
-        bundle?.load
         return bundle
     }
     return nil
 }()
 func ImageWithName(name:String) -> UIImage? {
     if let ST_GMStarBundle=ST_GMStarBundle {
-        return UIImage(named: name, in: ST_GMStarBundle, compatibleWith: nil)
+        let img=UIImage(named: name, in: ST_GMStarBundle, compatibleWith: nil)
+        return img
     }
     return nil
 }
@@ -54,11 +54,25 @@ open class GMStarView: UIView {
     public convenience init(with gain:CGFloat){
         self.init()
         self.gain=gain
+        self.commonInit()
+    }
+    
+    override public init(frame: CGRect) {
+        super .init(frame: frame)
+        self.commonInit()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super .init(coder: aDecoder)
+        self.commonInit()
+    }
+    
+    open func commonInit() {
+        self.backgroundColor=UIColor.clear
     }
     
     open override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.backgroundColor=UIColor.clear
         if let starFImage=starFImage,let starBImage=starBImage {
             let contentRect=UIEdgeInsetsInsetRect(rect, padding)
             let h=contentRect.size.height
