@@ -9,27 +9,27 @@
 import UIKit
 
 open class GMStarView: UIView {
-    var starFImage:UIImage?=UIImage(named: "gm_star_f"){ //前景图标
+    open var starFImage:UIImage?=UIImage(named: "gm_star_f"){ //前景图标
         didSet{
             self.setNeedsDisplay()
         }
     }
-    var starBImage:UIImage?=UIImage(named: "gm_star_b"){ //背景图标
+    open var starBImage:UIImage?=UIImage(named: "gm_star_b"){ //背景图标
         didSet{
             self.setNeedsDisplay()
         }
     }
-    var count=5{ //默认为5个星级图标
+    open var count=5{ //默认为5个星级图标
         didSet {
             self.setNeedsDisplay()
         }
     }
-    var gain:CGFloat=0{ //当前星级
+    open var gain:CGFloat=0{ //当前星级
         didSet{
             self.setNeedsDisplay()
         }
     }
-    var padding=UIEdgeInsets.zero{
+    open var padding=UIEdgeInsets.zero{
         didSet{
             self.setNeedsDisplay()
         }
