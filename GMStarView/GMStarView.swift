@@ -25,12 +25,12 @@ func ImageWithName(name:String) -> UIImage? {
 }
 
 open class GMStarView: UIView {
-    open var starFImage:UIImage?=ImageWithName(name: "gm_star_f"){ //前景图标
+    open var starFImage:UIImage?{ //前景图标
         didSet{
             self.setNeedsDisplay()
         }
     }
-    open var starBImage:UIImage?=ImageWithName(name: "gm_star_b"){ //背景图标
+    open var starBImage:UIImage?{ //背景图标
         didSet{
             self.setNeedsDisplay()
         }
@@ -69,6 +69,8 @@ open class GMStarView: UIView {
     
     open func commonInit() {
         self.backgroundColor=UIColor.clear
+        self.starFImage=ImageWithName(name: "gm_star_f")
+        self.starBImage=ImageWithName(name: "gm_star_b")
     }
     
     open override func draw(_ rect: CGRect) {
