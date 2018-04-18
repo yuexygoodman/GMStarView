@@ -8,7 +8,7 @@
 
 import UIKit
 
-let ST_GMStarBundle:Bundle?={
+fileprivate let ST_GMStarBundle:Bundle?={
     let path=Bundle(for: GMStarView.self).path(forResource: "GMStarBundle", ofType: "bundle")
     if let path=path {
         let bundle=Bundle(path: path)
@@ -16,7 +16,7 @@ let ST_GMStarBundle:Bundle?={
     }
     return nil
 }()
-func ImageWithName(name:String) -> UIImage? {
+fileprivate func ImageWithName(name:String) -> UIImage? {
     if let ST_GMStarBundle=ST_GMStarBundle {
         let img=UIImage(named: name, in: ST_GMStarBundle, compatibleWith: nil)
         return img
