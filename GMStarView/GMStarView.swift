@@ -8,13 +8,29 @@
 
 import UIKit
 
+let ST_GMStarBundle:Bundle?={
+    let path=Bundle(for: GMStarView.self).path(forResource: "GMStarBundle", ofType: "bundle")
+    if let path=path {
+        let bundle=Bundle(path: path)
+        bundle?.load
+        return bundle
+    }
+    return nil
+}()
+func ImageWithName(name:String) -> UIImage? {
+    if let ST_GMStarBundle=ST_GMStarBundle {
+        return UIImage(named: name, in: ST_GMStarBundle, compatibleWith: nil)
+    }
+    return nil
+}
+
 open class GMStarView: UIView {
-    open var starFImage:UIImage?=UIImage(named: "gm_star_f"){ //前景图标
+    open var starFImage:UIImage?=ImageWithName(name: "gm_star_f"){ //前景图标
         didSet{
             self.setNeedsDisplay()
         }
     }
-    open var starBImage:UIImage?=UIImage(named: "gm_star_b"){ //背景图标
+    open var starBImage:UIImage?=ImageWithName(name: "gm_star_b"){ //背景图标
         didSet{
             self.setNeedsDisplay()
         }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		806A96D92084A5D300F194B8 /* GMStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806A96D62084A5D200F194B8 /* GMStarView.swift */; };
 		806A96DA2084A5D300F194B8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 806A96D72084A5D200F194B8 /* Info.plist */; };
-		806A96DB2084A5D300F194B8 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806A96D82084A5D200F194B8 /* Resources.xcassets */; };
+		80740FB02086EEE30022A5A8 /* GMStarBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80740FAF2086EEE20022A5A8 /* GMStarBundle.bundle */; };
 		8086878720847C6000AD6E98 /* GMStarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086877D20847C6000AD6E98 /* GMStarView.framework */; };
 		8086878C20847C6000AD6E98 /* GMStarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086878B20847C6000AD6E98 /* GMStarViewTests.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		806A96D62084A5D200F194B8 /* GMStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMStarView.swift; sourceTree = "<group>"; };
 		806A96D72084A5D200F194B8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		806A96D82084A5D200F194B8 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		80740FAF2086EEE20022A5A8 /* GMStarBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GMStarBundle.bundle; sourceTree = "<group>"; };
 		8086877D20847C6000AD6E98 /* GMStarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMStarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8086878620847C6000AD6E98 /* GMStarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMStarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8086878B20847C6000AD6E98 /* GMStarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMStarViewTests.swift; sourceTree = "<group>"; };
@@ -56,9 +56,9 @@
 		806A96D52084A5D200F194B8 /* GMStarView */ = {
 			isa = PBXGroup;
 			children = (
+				80740FAF2086EEE20022A5A8 /* GMStarBundle.bundle */,
 				806A96D62084A5D200F194B8 /* GMStarView.swift */,
 				806A96D72084A5D200F194B8 /* Info.plist */,
-				806A96D82084A5D200F194B8 /* Resources.xcassets */,
 			);
 			path = GMStarView;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806A96DA2084A5D300F194B8 /* Info.plist in Resources */,
-				806A96DB2084A5D300F194B8 /* Resources.xcassets in Resources */,
+				80740FB02086EEE30022A5A8 /* GMStarBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
